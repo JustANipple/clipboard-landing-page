@@ -9,6 +9,10 @@
   <title>Frontend Mentor | Clipboard landing page</title>
 
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,14 +20,20 @@
 
     <header class="top-container">
 
-      <img src="images/logo.svg" alt="Clipboard logo">
-      <h1>A history of everything you copy</h1>
-      <p>
-        Clipboard allows you to track and organize everything you 
-        copy. Instantly access your clipboard on all your devices.
-      </p>
-      <a href="#">Download for iOS</a>
-      <a href="#">Download for Mac</a>
+      <img src="images/logo.svg" alt="Clipboard logo" class="clipLogo">
+
+      <div class="intro">
+        <h1 class="history">A history of everything you copy</h1>
+        <p class="info">
+          Clipboard allows you to track and organize everything you 
+          copy. Instantly access your clipboard on all your devices.
+        </p>
+      </div>
+      
+      <div class="download">
+        <a href="#" class="ios">Download for iOS</a>
+        <a href="#" class="mac">Download for Mac</a>
+      </div>
   
     </header>
   
@@ -123,6 +133,6 @@
     </footer>
 
   </div>
-  
+
 </body>
 </html>
