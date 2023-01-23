@@ -132,3 +132,50 @@ p {
 }
 
 /* Third block */
+
+.clipboard {
+  display: grid;
+  gap: 4rem;
+}
+
+.clipboard-header {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Fourth block */
+
+.workflow-header {
+  display: grid;
+  gap: 1rem;
+}
+
+.workflow-func {
+  display: grid;
+}
+
+.blacklistImage,
+.snippetsImage,
+.previewImage {
+  height: 2.5rem;
+}
+
+.blacklistImage img,
+.snippetsImage img,
+.previewImage img {
+  margin: 0 auto;
+}
+
+.blacklist-header,
+.snippets-header,
+.preview-header {
+  display: grid;
+  gap: 1rem;
+}
+
+.blacklist,
+.snippets,
+.preview {
+  display: grid;
+  gap: 2rem;
+}
