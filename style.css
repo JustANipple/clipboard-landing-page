@@ -41,6 +41,7 @@ body {
   background-image: url(images/bg-header-mobile.png);
   background-repeat: no-repeat;
   text-align: center;
+  background-size: contain;
 }
 
 .container {
@@ -260,4 +261,35 @@ li:not(:last-child) {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+}
+
+/* Active states */
+
+.ios:hover {
+  background-color: hsl(171, 52%, 58%);
+  box-shadow: 0px 2px 1px 1px hsl(170, 41%, 53%), 0px 5px 30px -10px var(--cyan);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.mac:hover {
+  background-color: hsl(234, 100%, 77%);
+  box-shadow: 0px 2px 1px 1px hsl(233, 66%, 69%), 0px 5px 30px -10px var(--blue);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+ul a:hover {
+  color: var(--cyan);
+  transition: color 0.5s ease;
+}
+
+.logo-facebook img:hover,
+.logo-twitter img:hover,
+.logo-instagram img:hover {
+  filter: invert(63%) sepia(21%) saturate(1363%) hue-rotate(122deg) brightness(94%) contrast(87%);
+}
+
+/* Desktop view */
+
+@media screen and (min-width: 1400px) {
+  
 }
