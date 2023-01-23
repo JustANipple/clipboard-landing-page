@@ -45,7 +45,7 @@ body {
 }
 
 .container {
-  margin: 5.5rem 2rem 2rem 2rem;
+  margin: 5.5rem 2rem 0 2rem;
   display: grid;
   gap: 11rem;
 }
@@ -55,6 +55,8 @@ h2,
 h3 {
   color: var(--dark-grayish-blue);
 }
+
+/* Pixel to Rem conversion at https://nekocalc.com/px-to-rem-converter */
 
 h2 {
   font-size: 1.688rem;
@@ -70,6 +72,18 @@ p {
   letter-spacing: 0.1px;
 }
 
+.track-header,
+.clipboard-header,
+.workflow-header,
+.blacklist-header,
+.snippets-header,
+.preview-header,
+.intro,
+.outro {
+  display: grid;
+  gap: 1rem;
+}
+
 /* First block */
 
 .top-container {
@@ -79,11 +93,6 @@ p {
 
 .clipLogo {
   margin: 1.531rem auto;
-}
-
-.intro {
-  display: grid;
-  gap: 1rem;
 }
 
 .download {
@@ -135,21 +144,11 @@ p {
   gap: 0.5rem;
 }
 
-.track-header {
-  display: grid;
-  gap: 1rem;
-}
-
 /* Third block */
 
 .clipboard {
   display: grid;
   gap: 4rem;
-}
-
-.clipboard-header {
-  display: grid;
-  gap: 1rem;
 }
 
 .mobileImage {
@@ -162,11 +161,6 @@ p {
 .workflow {
   display: grid;
   gap: 5.5rem;
-}
-
-.workflow-header {
-  display: grid;
-  gap: 1rem;
 }
 
 .workflow-func {
@@ -184,13 +178,6 @@ p {
 .snippetsImage img,
 .previewImage img {
   margin: 0 auto;
-}
-
-.blacklist-header,
-.snippets-header,
-.preview-header {
-  display: grid;
-  gap: 1rem;
 }
 
 .blacklist,
@@ -218,11 +205,6 @@ p {
 .bot-container {
   display: grid;
   gap: 3rem;
-}
-
-.outro {
-  display: grid;
-  gap: 1rem;
 }
 
 /* Seventh block */
@@ -293,5 +275,138 @@ ul a:hover {
 /* Desktop view */
 
 @media screen and (min-width: 1400px) {
+
+  /* General styling */
+
+  body {
+    background-image: url(images/bg-header-desktop.png);
+    font-size: 1.125rem;
+  }
+
+  .container {
+    margin: 6em 0 0 0;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.917em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .track-header,
+.clipboard-header,
+.workflow-header,
+.blacklist-header,
+.snippets-header,
+.preview-header,
+.intro,
+.outro {
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+  /* First block */
+
+  .info {
+    font-size: 1.1em;
+  }
+
+  .download {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .download a {
+    padding: 1em 2em;
+  }
+
+  /* Second block */
+
+  .track {
+    grid-template-areas: 
+    "header header"
+    "photo functionalities"
+    "photo functionalities"
+    "photo functionalities";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .track-header {
+    grid-area: header;
+  }
+
+  .pcImage {
+    width: max-content;
+  }
+
+  .pcImage img {
+    position: relative;
+    right: 2em;
+  }
+
+  .track-func {
+    text-align: left;
+    margin: auto 0;
+    max-width: 22em;
+  }
+
+  .track-func div {
+    gap: 1em;
+  }
+
+  /* Fourth block */
+
+  .workflow-func {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 70em;
+    margin: 0 auto;
+    font-size: 0.9em;
+    gap: 1.5em;
+  }
+
+  /* Fifth block */
+
+  .partners {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0;
+    margin: 0 auto;
+    gap: 4.5em;
+  }
+
+  /* Seventh block */
+
+  footer {
+    display: flex;
+    text-align: left;
+    padding: 2em 8.556em;
+    max-height: 60em;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+  }
   
+  ul {
+    column-count: 3;
+    column-gap: 4em;
+  }
+
+  li:not(:last-child) {
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 1em;
+  }
+
+  .social {
+    margin-left: auto;
+    gap: 1.389em;
+  }
 }
