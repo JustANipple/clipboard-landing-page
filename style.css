@@ -35,3 +35,100 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Styles */
 
+/* General styling */
+body {
+  font-family: var(--ff);
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.container {
+  margin: 5.5rem 2rem 2rem 2rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-grayish-blue);
+}
+
+h2 {
+  font-size: 1.688rem;
+}
+
+h3 {
+  font-size: 1.438rem;
+}
+
+p {
+  color: var(--grayish-blue);
+  line-height: 1.625rem;
+  letter-spacing: 0.1px;
+}
+
+/* First block */
+
+.top-container {
+  display: grid;
+  gap: 3rem;
+}
+
+.clipLogo {
+  margin: 1.531rem auto;
+}
+
+.intro {
+  display: grid;
+  gap: 1rem;
+}
+
+.download {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.download a {
+  text-decoration: none;
+  font-weight: var(--fw-semiBold);
+  color: white;
+  letter-spacing: 1px;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-size: 1.031rem;
+}
+
+.ios {
+  background-color: var(--cyan);
+  box-shadow: 0px 2px 1px 1px hsl(170, 67%, 37%), 0px 5px 30px -10px var(--cyan);
+}
+
+.mac {
+  background-color: var(--blue);
+  box-shadow: 0px 2px 1px 1px hsl(233, 67%, 59%), 0px 5px 30px -10px var(--blue);
+}
+
+/* Second block */
+
+.track {
+  display: grid;
+  gap: 3.75rem;
+}
+
+.track-func {
+  display: grid;
+  gap: 3rem;
+}
+
+.track-func div {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.track-header {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Third block */
