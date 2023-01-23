@@ -45,6 +45,8 @@ body {
 
 .container {
   margin: 5.5rem 2rem 2rem 2rem;
+  display: grid;
+  gap: 11rem;
 }
 
 h1,
@@ -111,6 +113,11 @@ p {
 
 /* Second block */
 
+.mid-container {
+  display: grid;
+  gap: 8rem;
+}
+
 .track {
   display: grid;
   gap: 3.75rem;
@@ -145,6 +152,11 @@ p {
 
 /* Fourth block */
 
+.workflow {
+  display: grid;
+  gap: 5.5rem;
+}
+
 .workflow-header {
   display: grid;
   gap: 1rem;
@@ -152,6 +164,7 @@ p {
 
 .workflow-func {
   display: grid;
+  gap: 3.5rem;
 }
 
 .blacklistImage,
@@ -178,4 +191,29 @@ p {
 .preview {
   display: grid;
   gap: 2rem;
+}
+
+/* Fifth block */
+
+.partners {
+  display: grid;
+  justify-content: center;
+  gap: 4.125rem;
+  padding: 0 6rem;
+}
+
+.partners div {
+  margin: 0 auto;
+}
+
+/* Sixth block */
+
+.bot-container {
+  display: grid;
+  gap: 3rem;
+}
+
+.outro {
+  display: grid;
+  gap: 1rem;
 }
