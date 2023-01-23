@@ -45,7 +45,7 @@ body {
 }
 
 .container {
-  margin: 5.5rem 2rem 0 2rem;
+  margin: 5.5rem 2rem 10rem 2rem;
   display: grid;
   gap: 11rem;
 }
@@ -285,7 +285,7 @@ ul a:hover {
   }
 
   .container {
-    margin: 6em 0 0 0;
+    margin: 6em 0 10em 0;
     gap: 8.5em;
   }
 
