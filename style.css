@@ -197,7 +197,7 @@ p {
 }
 
 .partners div {
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* Sixth block */
@@ -270,11 +270,12 @@ ul a:hover {
 .logo-twitter img:hover,
 .logo-instagram img:hover {
   filter: invert(63%) sepia(21%) saturate(1363%) hue-rotate(122deg) brightness(94%) contrast(87%);
+  transition: filter 0.5s ease;
 }
 
 /* Desktop view */
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1250px) {
 
   /* General styling */
 
@@ -285,6 +286,7 @@ ul a:hover {
 
   .container {
     margin: 6em 0 0 0;
+    gap: 8.5em;
   }
 
   h1 {
@@ -300,21 +302,31 @@ ul a:hover {
   }
 
   .track-header,
-.clipboard-header,
-.workflow-header,
-.blacklist-header,
-.snippets-header,
-.preview-header,
-.intro,
-.outro {
+  .clipboard-header,
+  .workflow-header,
+  .blacklist-header,
+  .snippets-header,
+  .preview-header,
+  .intro,
+  .outro {
   max-width: 40em;
   margin: 0 auto;
-}
+  gap: 1.5em;
+  }
 
   /* First block */
 
+  .top-container {
+    gap: 3em;
+  }
+
+  .clipLogo {
+    margin: 1em auto 0 auto;
+  }
+
   .info {
     font-size: 1.1em;
+    line-height: 1.5em;
   }
 
   .download {
@@ -332,10 +344,14 @@ ul a:hover {
   .track {
     grid-template-areas: 
     "header header"
-    "photo functionalities"
-    "photo functionalities"
     "photo functionalities";
     grid-template-columns: 1fr 1fr;
+    gap: 5em;
+    font-size: 0.9em;
+  }
+
+  .track-func {
+    gap: 3.5em;
   }
 
   .track-header {
