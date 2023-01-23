@@ -150,6 +150,11 @@ p {
   gap: 1rem;
 }
 
+.mobileImage {
+  width: fit-content;
+  margin: 0 auto;
+}
+
 /* Fourth block */
 
 .workflow {
@@ -216,4 +221,43 @@ p {
 .outro {
   display: grid;
   gap: 1rem;
+}
+
+/* Seventh block */
+
+footer {
+  background-color: hsl(220, 18%, 97%);
+  display: grid;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.mini-clipboard-logo {
+  height: 3.5rem;
+}
+
+.mini-clipboard-logo img {
+  height: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+}
+
+li:not(:last-child) {
+  padding-bottom: 2rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
 }
