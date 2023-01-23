@@ -102,6 +102,7 @@ p {
   font-size: 1.031rem;
 }
 
+/* Find color for borders and shadows at https://imagecolorpicker.com */
 .ios {
   background-color: var(--cyan);
   box-shadow: 0px 2px 1px 1px hsl(170, 67%, 37%), 0px 5px 30px -10px var(--cyan);
@@ -282,6 +283,7 @@ ul a:hover {
   transition: color 0.5s ease;
 }
 
+/* Conversion for filter at https://codepen.io/sosuke/pen/Pjoqqp */
 .logo-facebook img:hover,
 .logo-twitter img:hover,
 .logo-instagram img:hover {
